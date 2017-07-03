@@ -6,10 +6,50 @@
     margin: 0 auto;
 }
 
-.col-33 {
-    flex: 1 1 33.33%;
+.col-1 {
+    flex: 1 1 100%;
 }
 
 .col-2 {
     flex: 1 1 calc(100%/2);
+}
+
+.col-3 {
+    flex: 1 1 calc(100%/3);
+}
+
+.col-4 {
+    flex: 1 1 calc(100%/4);
+}
+
+.col-5 {
+    flex: 1 1 calc(100%/5);
+}
+
+.col-6 {
+    flex: 1 1 calc(100%/6);
+}
+
+.col-7 {
+    flex: 1 1 calc(100%/7);
+}
+
+.col-8 {
+    flex: 1 1 calc(100%/8);
+}
+
+.col-9 {
+    flex: 1 1 calc(100%/9);
+}
+
+.col-10 {
+    flex: 1 1 calc(100%/10);
+}
+
+.col-11 {
+    flex: 1 1 calc(100%/11);
+}
+
+.col-12 {
+    flex: 1 1 calc(100%/12);
 }
