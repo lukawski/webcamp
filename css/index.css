@@ -8,7 +8,8 @@ html {
 }
 
 body {
-    background: url("../img/zadanie_1_bg.jpg");
+    background: url("../img/zadanie_1_bg.jpg") no-repeat;
+    background-size: cover;
     width: 72%;
     margin: 0 auto;
     padding-top: 1.5em;
