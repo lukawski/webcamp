@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/slider.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <script src="https://use.fontawesome.com/fd43abc220.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="dist/slider.js"></script>
+        <script src="dist/index.js"></script>
     </head>
     <body>
         <header class="flex header">
@@ -16,7 +20,7 @@
             <div class="col-3 col-m-100 m-mt mobile-hide">
                 <form name="search" class="form-search">
                     <input class="form-search-text" type="text" name="searchQuery" placeholder="Szukaj...">
-                    <button class="form-search-submit uppercase" type="submit" class="uppercase">szukaj</button>
+                    <button class="form-search-submit uppercase" type="submit">szukaj</button>
                 </form>
             </div>
             <div class="col-3 align-right icons mobile-hide">
@@ -294,6 +298,87 @@
             </li>
             </ul>
         </nav>
+        <main>
+            <div class="slider">
+                <ul class="slider flex">
+                    <li class="slide 1">
+                        <img src="img/sliders/banners/banner1.jpg" alt="pierwszy banner">
+                    </li>
+                    <li class="slide 2">
+                        <img src="img/sliders/banners/banner2.jpg" alt="pierwszy banner">
+                    </li>
+                    <li class="slide 3">
+                        <img src="img/sliders/banners/banner2.jpg" alt="pierwszy banner">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex stretch">
+                <div class="col-2 button button-1">
+                    <img src="img/button1_1.jpg">
+                    <div class="button-content">
+                        <h2 class="uppercase">summer!</h2>
+                        <a href="#" class="uppercase">sprawdź</a>
+                    </div>
+                </div>
+                <div class="col-4 button button-2">
+                    <img src="img/button2_1.jpg">
+                    <div class="button-content">
+                        <h2 class="uppercase">rouge!</h2>
+                        <a href="#" class="uppercase">sprawdź</a>
+                    </div>
+                </div>
+                <div class="col-4 button button-2">
+                    <img src="img/button3_1.jpg">
+                    <div class="button-content">
+                        <h2 class="uppercase">marina!</h2>
+                        <a href="#" class="uppercase">sprawdź</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <ul class="tabs-nav uppercase">
+                    <li><a href="#" class="active">news</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">o nas</a></li>
+                </ul>
+                <div class="tabs-content">
+
+                </div>
+            </div>
+
+            <!--<div class="slider flex">
+                <ul class="slide flex col-2">
+                    <li class="col-4">
+                        <img src="img/sliders/products/product_1.jpg">
+                    </li>
+                    <li class="col-4">
+                        <img src="img/sliders/products/product_2.jpg">
+                    </li>
+                    <li class="col-4">
+                        <img src="img/sliders/products/product_3.jpg">
+                    </li>
+                    <li class="col-4">
+                        <img src="img/sliders/products/product_4.jpg">
+                    </li>
+                </ul>
+                <ul class="slide flex col-2">
+                    <li>
+                        <img src="img/sliders/products/product_1.jpg">
+                    </li>
+                    <li>
+                        <img src="img/sliders/products/product_2.jpg">
+                    </li>
+                    <li>
+                        <img src="img/sliders/products/product_3.jpg">
+                    </li>
+                    <li>
+                        <img src="img/sliders/products/product_4.jpg">
+                    </li>
+                </ul>
+            </div>-->
+        </main>
         <footer class="flex footer">
             <div class="col-2">
                 <ul class="footer-links">

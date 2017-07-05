@@ -9,7 +9,6 @@ html {
 
 body {
     background: url("../img/zadanie_1_bg.jpg") no-repeat;
-    background-size: cover;
     width: 72%;
     margin: 0 auto;
     padding-top: 1.5em;
@@ -29,6 +28,10 @@ a {
 
 .align-center {
     text-align: center;
+}
+
+.stretch {
+    align-items: stretch;
 }
 
 .form-search {
@@ -278,6 +281,146 @@ nav > ul > li > ul > li > ul > li:hover > a {
         border-right: none;
         padding: 0;
     }
+}
+
+.button {
+    position: relative;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.button-1 > img {
+    transition: all .5s ease;
+}
+
+.button-content {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    color: white;
+}
+
+.button-content h2 {
+    font-size: 2.7em;
+}
+
+.button-content a {
+    border: 1px solid white;
+    padding: 10px 25px;
+    color: white;
+}
+
+.button:hover a {
+    background: #fff;
+    color: black;
+}
+
+.button-1:hover img {
+    transform: scale(1.2) rotate(2deg);
+}
+
+.button-2 img {
+    transition: all .5s ease;
+}
+
+.button-2:hover img {
+    transform: scale(1.2);
+}
+
+.tabs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tabs-nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+.tabs-nav li a {
+    margin: 0 20px;
+    color: black;
+}
+
+.tabs-nav li a.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: royalblue;
+}
+
+.tabs-nav li {
+    position: relative;
+}
+
+.tabs-nav li:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: royalblue;
+}
+
+.tabs-content {
+    background: white;
+}
+
+.news {
+    display: flex;
+}
+
+.news > div {
+    flex: 1 1 calc(100%/3);
+    margin: 20px;
+}
+
+.news > div > img {
+    max-width: 100%;
+}
+
+.blog > div {
+    padding: 20px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.blog > div:last-child {
+    border: none;
+}
+
+.blog img {
+    max-width: 15%;
+    float: left;
+    margin-right: 10px;
+}
+
+.o_nas img {
+    max-width: 100%;
+}
+
+.o_nas div {
+    padding: 15px;
+}
+
+.o_nas > div > h3 {
+    margin-top: 0;
+}
+
+.o_nas a, .blog a, .news a {
+    color: black;
 }
 
 @media (max-device-width: 768px) {
