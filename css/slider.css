@@ -1,0 +1,37 @@
+.slider {
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slide {
+    width: 100%;
+    flex-wrap: nowrap;
+    transition: transform 1s;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons button {
+    background: gray;
+    border: none;
+    margin: 0 15px;
+    width: 5%;
+    transition: background 1s;
+}
+
+.buttons button.active {
+    background: royalblue;
+}
+
+.buttons button:focus {
+    outline: none;
+}
